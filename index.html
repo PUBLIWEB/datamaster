@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador - Página tipo Workspace</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Barra superior principal -->
+  <header class="barra-superior">
+    <div class="logo">Google Workspace</div>
+    <nav class="menu-principal">
+      <a href="#" class="item-menu activo" onclick="cambiarContenido('inicio', this)">Descripción general</a>
+      <a href="#" class="item-menu" onclick="cambiarContenido('extremo', this)">Extremo</a>
+      <a href="#" class="item-menu" onclick="cambiarContenido('regiones', this)">Regiones de datos</a>
+      <a href="#" class="item-menu" onclick="cambiarContenido('alertas', this)">Centro de alertas</a>
+      <a href="#" class="item-menu" onclick="cambiarContenido('seguridad', this)">Centro de seguridad</a>
+    </nav>
+  </header>
+
+  <!-- Barra secundaria -->
+  <div class="barra-secundaria">
+    <button onclick="cambiarContenido('consola', this)">Consola del administrador</button>
+    <button onclick="cambiarContenido('ventas', this)">Comunicarse con ventas</button>
+    <button class="azul" onclick="cambiarContenido('comenzar', this)">Comience ahora</button>
+  </div>
+
+  <!-- Contenido dinámico -->
+  <main id="contenido">
+    <h2>Bienvenido a la consola de administración</h2>
+    <p>Seleccione una opción del menú para ver su contenido aquí.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
